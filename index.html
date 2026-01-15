@@ -3,66 +3,133 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+<title>Jv's Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <h1>Portfolio</h1>
-    <p>Welcome to Jv a Modern Minimalist Portfolio</p>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span class="hero-name">Jv</span> <span class="arrow">↓</span></h1>
+
+    <p>IT Student</p>
+  </div>
+
+  <div class="hero-shapes">
+    <span class="shape shape1"></span>
+    <span class="shape shape2"></span>
+    <span class="shape shape3"></span>
+  </div>
 </header>
 
-<section id="about">
+<main>
+
+
+  <section id="about" data-slide="left">
     <h2>About Me</h2>
-    <p>I live here in Baguio City and it is not that cold anymore.</p>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I am Jv Hernandez, I live here in Baguio City. I study in the University of the Cordilleras, BSIT student.</p>
+      </div>
+      <div class="about-image">
+        <img src="/img/JDD.jpg" alt="Jv">
+      </div>
+    </div>
+  </section>
+
+
+<section id="edu-exp" data-slide="right">
+  <h2>Education & Experience</h2>
+  
+  <div class="edu-grid">
+
+    <a class="edu-card" href="https://slsi.ph" target="_blank">
+      <h3>SLSI</h3>
+      <p>Saint Louis School, Inc. (CENTER)</p>
+    </a>
+    
+
+    <a class="edu-card" href="https://www.slu.edu.ph" target="_blank">
+      <h3>SLU</h3>
+      <p>Saint Louis University</p>
+    </a>
+
+
+    <a class="edu-card" href="https://www.uc-bcf.edu.ph" target="_blank">
+      <h3>UC</h3>
+      <p>University of the Cordilleras</p>
+    </a>
+  </div>
 </section>
 
-<section id="education">
-    <h2>Education</h2>
-    <p>SLSC <br>
-        SLU <br>
-        UC
-    </p>
-</section>
 
-<section id="experience">
-    <h2>Experience</h2>
-    <p>Show More</p>
-</section>
 
-<section id="skills">
+  <section id="skills" data-slide="left">
     <h2>Skills</h2>
-    <ul>
-        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub</li>
-    </ul>
-</section>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">UI/UX Design</div>
+    </div>
+  </section>
 
-<section id="projects">
+  <section id="projects" data-slide="right">
     <h2>Projects</h2>
     <div class="project-grid">
-        <a class="project-card" href="https://plp-jv.vercel.app" target="_blank">
-            <h3>Ugreen</h3>
-            <p>Web-based system for a charger.</p>
-        </a>
-
-        <a class="project-card" href="https://github.com/yourusername/project2" target="_blank">
-            <h3>Personal Portfolio Website</h3>
-            <p>Responsive portfolio built with HTML, CSS, and JavaScript.</p>
-        </a>
+      <a class="project-card" href="https://plp-jv.vercel.app" target="_blank">
+        <h3>Ugreen</h3>
+        <p>Fast Charging Brick.</p>
+      </a>
+      <a class="project-card" href="https://survey-jv.vercel.app" target="_blank">
+        <h3>Survey</h3>
+        <p>Simple Surver</p>
+      </a>
     </div>
-</section>
+  </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <form id="contactForm">
-        <input id="name" placeholder="Your Name">
-        <input id="email" type="email" placeholder="Your Email">
-        <button>Send</button>
+
+  <section id="contact" data-slide="left">
+    <h2>Contact Me</h2>
+    <div class="contact-grid">
+
+
+      <div class="contact-info">
+        <div class="info-card">
+          <span class="icon">📧</span>
+          <h3>Email</h3>
+          <p>jvhernandezzz11@gmail.com</p>
+        </div>
+        <div class="info-card">
+          <span class="icon">📞</span>
+          <h3>Phone</h3>
+          <p>0947 3227 876</p>
+        </div>
+        <div class="info-card">
+          <span class="icon">🌐</span>
+          <h3>Social</h3>
+          <p>
+            <a href="https://github.com/Jeyviee" target="_blank">GitHub</a> |
+            <a href="https://www.facebook.com/jeyvii.hernandez/" target="_blank">Facebook</a>
+          </p>
+        </div>
+      </div>
+
+
+      <form id="contactForm">
+        <input id="name" placeholder="Your Name" required>
+        <input id="email" type="email" placeholder="Your Email" required>
+        <textarea id="messageBox" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
         <p id="message"></p>
-    </form>
-</section>
+      </form>
+
+    </div>
+  </section>
+
+</main>
 
 <script src="script.js"></script>
 </body>
